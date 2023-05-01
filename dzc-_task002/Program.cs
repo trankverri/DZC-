@@ -56,7 +56,7 @@ Console.Clear();
 782 -> 8
 918 -> 1
 */
-Console.WriteLine($"Задача 10.");
+Console.WriteLine($"Задача 10. на выходе показывает вторую цифру этого числа");
 int x = new Random().Next(100, 1000);
 Console.WriteLine(x);
 int y = (x % 100) / 10;
@@ -71,9 +71,8 @@ Console.WriteLine(y);
 78 -> третьей цифры нет
 32679 -> 6
 */
-// string str = 1337.ToString();
-// Console.WriteLine(str[1]);
-Console.WriteLine($"Задача 13.");
+Console.WriteLine("Задача 13. программа, которая выводит третью цифру заданного");
+Console.WriteLine("числа или сообщает, что третьей цифры нет.");
 int F = new Random().Next(-100, 1000);
 Console.WriteLine(F);
 int i = 0;
@@ -106,15 +105,13 @@ if (F < 0) F = -F;
         //     j -= 1;
         // }
         int R = k % 10;
-        Console.WriteLine($"Третье число - {R}");
-
-
+        Console.WriteLine($"Третье число - " + R);
     }
     else Console.WriteLine($"разрядность числа меньше 3х");
 }
 
-// Console.WriteLine("Press Enter key to continue");
-// Console.ReadLine();
+Console.WriteLine("Press Enter key to continue");
+Console.ReadLine();
 
 // int y = (F%100) / 10;
 // Console.WriteLine(y);
@@ -127,17 +124,21 @@ if (F < 0) F = -F;
 7 -> да
 1 -> нет
 */
-Console.WriteLine($"Задача 15.");
+Console.WriteLine("Задача 15.");
+Console.WriteLine("программа, которая принимает на вход цифру, обозначающую день недели,");
+Console.WriteLine("и проверяет, является ли этот день выходным");
 Console.WriteLine($"введите число от 1 до 7");
 while (true)
 {
     int a = Convert.ToInt32(Console.ReadLine());
     if (a > 0 && a < 8)
     {
-        if ( a==6 || a==7 ) { 
+        if (a == 6 || a == 7)
+        {
             Console.WriteLine("Nirvana");
+            break;
         }
-        else 
+        else
         {
             Console.WriteLine("Arbaiten!");
         }
@@ -145,6 +146,96 @@ while (true)
     else
     {
         Console.WriteLine("FasePalm");
-        continue;
+        //continue;
+        break;
     }
+}
+Console.WriteLine("идем дальше");
+Console.WriteLine("Press Enter key to continue");
+Console.ReadLine();
+
+// Задача 19. Проверьте пятизначное число на полиндром.
+Console.WriteLine($"Задача 19. Проверка на полиндром");
+Console.WriteLine($"введите число. максимум 10 знаков");
+
+int num = Convert.ToInt32(Console.ReadLine());
+
+// `n` сохраняет заданное целое число
+int n = num;
+// `rev` хранит обратную сторону заданного целого числа
+int rev = 0;
+
+while (n>0)
+{
+    // это сохранит последнюю цифру `n` в переменной `r`
+    // например, если `n` равно 1234, то `r` будет равно 4
+    int r = n % 10;
+    //Console.WriteLine("r " + r);
+
+    // добавляем `r` к `rev` вместо себя
+    // например, если `rev = 65` и `r = 4`, то новый `rev` будет 654
+    rev = rev * 10 + r;
+    
+    // удалить последнюю цифру из `n`
+    // например, если `n` равно 1234, то новое `n` будет 123
+    n = n / 10;
+    //Console.WriteLine("n " + n);
+}
+Console.WriteLine(rev);
+if (num == rev)
+{
+    Console.WriteLine("Palindrome");
+}
+else
+{
+    Console.WriteLine("Not Palindrome");
+}
+Console.WriteLine("Press Enter key to continue");
+Console.ReadLine();
+
+// Задача 21. Длина отрезка по координатам.
+// Console.WriteLine($"Задача 21. Длина отрезка по координатам.");
+// variant 1
+
+Console.WriteLine($"введите координаты");
+int x1, y1, z1, x2, y2, z2;
+Console.Write("x1=");
+x1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("y1=");
+y1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("z1=");
+z1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("x2=");
+x2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("y2=");
+y2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("z2=");
+z2 = Convert.ToInt32(Console.ReadLine());
+
+double Line = Math.Pow((Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2) + Math.Pow((z2 - z1), 2)), 0.5);
+Console.WriteLine("Line =" + Math.Round(Line, 2));
+Console.WriteLine("_");
+
+// //Variant 2
+// Console.WriteLine($"введите координаты");
+
+// int [,]  Points = new int [,3];
+
+
+// Задача 23. Вход N. Выход таблица кубов чисел от 1 до N
+Console.WriteLine("Задача 23. таблица кубов чисел от 1 до N");
+Console.WriteLine("введите число");
+int numbr = Convert.ToInt32(Console.ReadLine());
+double [] kub = new double [numbr];
+
+for (int o = 0; o < numbr; o++)
+{
+    kub[o] = Math.Pow((o+1), 3);
+}
+Console.WriteLine("Print new array.");
+int v = 0;
+while (v < numbr)
+{
+    Console.Write("| " + kub[v]);
+    v++;
 }
