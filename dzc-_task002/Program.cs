@@ -73,7 +73,7 @@ Console.WriteLine(y);
 */
 Console.WriteLine("Задача 13. программа, которая выводит третью цифру заданного");
 Console.WriteLine("числа или сообщает, что третьей цифры нет.");
-int F = new Random().Next(-100, 1000);
+int F = new Random().Next(-100, 10000);
 Console.WriteLine(F);
 int i = 0;
 int k = F;
@@ -104,6 +104,7 @@ if (F < 0) F = -F;
         //     Console.WriteLine($"y= {y}");
         //     j -= 1;
         // }
+        
         int R = k % 10;
         Console.WriteLine($"Третье число - " + R);
     }
