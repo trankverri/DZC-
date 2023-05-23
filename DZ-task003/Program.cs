@@ -81,7 +81,7 @@ Console.WriteLine("Введите число от 8 до 15");
 int num3 = Convert.ToInt32(Console.ReadLine());
 Random dice = new Random();
 int[] mass = new int[num3];
-for (int i = 0; i < num3; i++)
+for (int i = 0; i < mass.Length; i++)
 {
     mass[i] = dice.Next(-100, 100);
     Console.Write($"[{mass[i]}] ");
