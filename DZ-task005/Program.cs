@@ -227,24 +227,24 @@ void FillMatrix(int[,] mass)
 int[,] Matrix2 = new int[2, 2];
 FillMatrix(Matrix2);
 PrintArray(Matrix2);
-int b1=Matrix2[0, 1];
-int b2=Matrix2[1, 1];
-int k1=Matrix2[0, 0];
-int k2=Matrix2[1, 0];
-double y, x,z; 
+
+int b1 = Matrix2[0, 1];
+int b2 = Matrix2[1, 1];
+int k1 = Matrix2[0, 0];
+int k2 = Matrix2[1, 0];
+double y, x, y2;
 // x = (b2 - b1) / (k1 - k2)
 // y = k1 * x + b1
 x = (b2 - b1) / (k1 - k2);
-//y = k1 * x + b1, z = k2 * x + b2;
+//y = k1 * x + b1, y = k2 * x + b2;
 y = k1 * x + b1;
-z = k2 * x + b2;
+y2 = k2 * x + b2;// странно
 
-Console.WriteLine($" X =  {x:F2} | Y = {y:F2} Z= {z:F2}");
+Console.WriteLine($" X =  {x:F2} | Y = {y:F2} Z= {y2:F2}");
 
-// Console.WriteLine($"введите X");
-// x = Convert.ToInt32(Console.ReadLine());
-
-//     y = Matrix2[0, 0] * x + Matrix2[0, 1];
-//     z = Matrix2[1, 0] * x + Matrix2[0, 1];
-//     Console.WriteLine($" Y =  {y} | Z = {z}");
-
+for (int i = -10; i < 10; i++)
+{
+    y = k1 * i + b1;
+    y2 = k2 * i + b2;
+    Console.WriteLine($" X =  {i:F2} | Y = {y:F2} Z= {y2:F2}");
+}
