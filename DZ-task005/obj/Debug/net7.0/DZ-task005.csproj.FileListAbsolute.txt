@@ -1,0 +1,15 @@
+C:\Repositories\DZC#\DZ-task005\bin\Debug\net7.0\DZ-task005.exe
+C:\Repositories\DZC#\DZ-task005\bin\Debug\net7.0\DZ-task005.deps.json
+C:\Repositories\DZC#\DZ-task005\bin\Debug\net7.0\DZ-task005.runtimeconfig.json
+C:\Repositories\DZC#\DZ-task005\bin\Debug\net7.0\DZ-task005.dll
+C:\Repositories\DZC#\DZ-task005\bin\Debug\net7.0\DZ-task005.pdb
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.csproj.AssemblyReference.cache
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.AssemblyInfoInputs.cache
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.AssemblyInfo.cs
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.csproj.CoreCompileInputs.cache
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.dll
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\refint\DZ-task005.dll
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.pdb
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\DZ-task005.genruntimeconfig.cache
+C:\Repositories\DZC#\DZ-task005\obj\Debug\net7.0\ref\DZ-task005.dll
