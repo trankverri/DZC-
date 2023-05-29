@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 Console.Clear();
 Console.WriteLine("Семинар 6");
-
+var IsEven =(int v) => v %2==0;
 void PrintArray(int[,] mass)
 {
     for (int i = 0; i < mass.GetLength(0); i++)
@@ -228,11 +229,11 @@ int[,] Matrix2 = new int[2, 2];
 FillMatrix(Matrix2);
 PrintArray(Matrix2);
 
-int b1 = Matrix2[0, 1];
-int b2 = Matrix2[1, 1];
-int k1 = Matrix2[0, 0];
-int k2 = Matrix2[1, 0];
-double y, x, y2;
+double b1 = Matrix2[0, 1];
+double b2 = Matrix2[1, 1];
+double k1 = Matrix2[0, 0];
+double k2 = Matrix2[1, 0];
+double y=0.000, x=0.000, y2=0.000;
 // x = (b2 - b1) / (k1 - k2)
 // y = k1 * x + b1
 x = (b2 - b1) / (k1 - k2);
@@ -240,11 +241,15 @@ x = (b2 - b1) / (k1 - k2);
 y = k1 * x + b1;
 y2 = k2 * x + b2;// странно
 
-Console.WriteLine($" X =  {x:F2} | Y = {y:F2} Z= {y2:F2}");
-
-for (int i = -10; i < 10; i++)
+Console.WriteLine($" X =  {x:F3} | Y = {y:F3} Y2= {y2:F3}");
+Console.WriteLine();
+/*
+for (double i = -1; i < 1;)
 {
-    y = k1 * i + b1;
-    y2 = k2 * i + b2;
-    Console.WriteLine($" X =  {i:F2} | Y = {y:F2} Z= {y2:F2}");
+    double y3 = k1 * i + b1;
+    double y4 = k2 * i + b2;
+    i = i + 0.1;
+    Console.WriteLine($" X =  {i:F3} | Y = {y3:F3} Y2= {y4:F3}");
 }
+*/
+
