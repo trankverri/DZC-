@@ -105,18 +105,15 @@ void ReversLine(int[,] mass)
     }
 }
 
-void ArithmeticMean(int[,] mass)
+void ArithmeticMean(int[,] mass)// для массивов 
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
         double sum = 0;
-        int i=0;
-        //for (int i = 0; i < mass.GetLength(0); i++)
-        //{
+        for (int i = 0; i < mass.GetLength(0); i++)
+        {
             sum += mass[i, j];
-            i++;
-
-        //}
+        }
         sum = sum / mass.GetLength(0);
         Console.Write($"{sum:f2}\t");
     }
@@ -135,6 +132,18 @@ Console.WriteLine($"summ glavnoy diogal {W} ");
 Console.WriteLine($"поменяли первую строку с последней");
 ReversLine(Matrix2);
 PrintArray(Matrix2);
+Console.WriteLine();
+
+// Задача 52. Задайте двумерный массив из целых чисел. 
+// Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+Console.Write("Задача 52. ");
+Console.WriteLine("Среднее каждого столбца -");
+ArithmeticMean(Matrix2);
 Console.WriteLine();
 
 // Задача 50. Напишите программу, которая на вход принимает 
@@ -166,28 +175,19 @@ else
     Console.WriteLine($"значение позиции {Matrix2[RowNumb, ColumnNumb]}");
 }
 Console.WriteLine();
-// Задача 52. Задайте двумерный массив из целых чисел. 
-// Найдите среднее арифметическое элементов в каждом столбце.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-Console.Write("Задача 52. ");
-Console.WriteLine("Среднее каждого столбца -");
-ArithmeticMean(Matrix2);
-Console.WriteLine();
+
 // Задача 47. Задайте двумерный массив размером m×n, 
 // заполненный случайными вещественными числами.
 // m = 3, n = 4.
 // 0,5 7 -2 -0,25
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
-Console.WriteLine("Задача 47");
-Console.Write("Задайте row от 3 до 10 - \t\t");
+Console.WriteLine(@"Задача 47. адайте двумерный массив размером M×N, 
+заполненный случайными вещественными числами.");
+Console.Write("Задайте M от 3 до 10 - \t\t");
 //добавить проверку на размерность массива меньше ноля
 int RowMass = Convert.ToInt32(Console.ReadLine());
-Console.Write("Задайте column от 3 до 10 - \t\t");
+Console.Write("Задайте N от 3 до 10 - \t\t");
 //добавить проверку на размерность массива меньше ноля
 int ColumnMass = Convert.ToInt32(Console.ReadLine());
 //Console.Write("задайте диапазон значений массива. от 100 до 999 - \t");
