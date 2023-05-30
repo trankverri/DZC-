@@ -110,11 +110,13 @@ void ArithmeticMean(int[,] mass)
     for (int j = 0; j < mass.GetLength(1); j++)
     {
         double sum = 0;
-        for (int i = 0; i < mass.GetLength(0); i++)
-        {
+        int i=0;
+        //for (int i = 0; i < mass.GetLength(0); i++)
+        //{
             sum += mass[i, j];
+            i++;
 
-        }
+        //}
         sum = sum / mass.GetLength(0);
         Console.Write($"{sum:f2}\t");
     }
@@ -145,8 +147,8 @@ Console.WriteLine();
 // 17 -> такого числа в массиве нет
 
 Console.WriteLine("Задача 50");
-int AA = 5; //Convert.ToInt32(Console.ReadLine());
-int BB = 8; //Convert.ToInt32(Console.ReadLine());
+//int AA = 5; //Convert.ToInt32(Console.ReadLine());
+//int BB = 8; //Convert.ToInt32(Console.ReadLine());
 // int[,] Matrix50 = new int[AA, BB];
 // FillArray(Matrix50);
 // PrintArray(Matrix50);
