@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Console.Clear();
 Console.WriteLine("Hello, World!");
 var IsEven = (int v) => v % 2 == 0;
-
+Console.WriteLine("IsEven = "+IsEven(35));
 // string address = string.Empty;
 
 // Random r= new Random();
@@ -118,8 +119,10 @@ void ArithmeticMean(int[,] mass)// для массивов
         Console.Write($"{sum:f2}\t");
     }
 }
-
+//
+Console.Write("Задайте число строк от 3 до 10 - \t\t");
 int A = Convert.ToInt32(Console.ReadLine());
+Console.Write("Задайте число колонок от 3 до 10 - \t\t");
 int B = Convert.ToInt32(Console.ReadLine());
 int[,] Matrix2 = new int[A, B];
 
