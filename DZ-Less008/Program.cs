@@ -1,6 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Урок 8. Двумерные массивы. Продолжение");
+void FillArray(int[,] mass)
+{
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+        for (int j = 0; j < mass.GetLength(1); j++)
+        {
+            mass[i, j] = new Random().Next(0, 10);
+        }
+
+    }
+}
+void PrintArray(int[,] mass)
+{
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+        for (int j = 0; j < mass.GetLength(1); j++)
+        {
+            Console.Write($"{mass[i, j]}\t");
+        }
+        Console.WriteLine();
+    }
+}
+//Console.Write("Задайте число строк от 3 до 10 - \t\t");
+int A = 3; //Convert.ToInt32(Console.ReadLine());
+//Console.Write("Задайте число колонок от 3 до 10 - \t\t");
+int B = 5; //Convert.ToInt32(Console.ReadLine());
+int[,] Matrix2 = new int[A, B];
+
+FillArray(Matrix2);
+PrintArray(Matrix2);
+Console.WriteLine();
 /*
 Задача 54: Задайте двумерный массив. Напишите программу, 
 которая упорядочит по убыванию элементы каждой строки двумерного массива.
