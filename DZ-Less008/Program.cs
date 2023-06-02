@@ -231,7 +231,7 @@ int[,] Task58(int[,] mass, int[,] mass2)
 
     // }
     int[,] TempMass = new int[A, B];
- 
+
     for (int i = 0; i < A; i++)
     {
         for (int j = 0; j < B; j++)
@@ -239,9 +239,9 @@ int[,] Task58(int[,] mass, int[,] mass2)
             for (int k = 0; k < A; k++)
             {
                 TempMass[i, j] += mass[i, k] * mass2[k, j];
-                          
+
             }
-        Console.Write("[ {0} ]", TempMass[i,j]);
+            Console.Write("[ {0} ]", TempMass[i, j]);
         }
         Console.WriteLine();
     }
@@ -255,17 +255,51 @@ Task58(Matrix58, Matrix59);
 Console.WriteLine();
 //PrintArray();
 
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
+// Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+// Массив размером 2 x 2 x 2
+// 66(0,0,0) 25(0,1,0)
+// 34(1,0,0) 41(1,1,0)
+// 27(0,0,1) 90(0,1,1)
+// 26(1,0,1) 55(1,1,1)
 
+Console.WriteLine("Задача 60");
+void Fill3DArray(int[,,] mass)
+{
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+        for (int j = 0; j < mass.GetLength(1); j++)
+        {
+            for (int k = 0; k < mass.GetLength(2); k++)
+            {
+                mass[i, j, k] = new Random().Next(0, 9);
+            }
+        }
+
+    }
+}
+void Print3DArray(int[,,] mass)
+{
+    for (int k = 0; k < mass.GetLength(2); k++)
+    {
+        for (int i = 0; i < mass.GetLength(0); i++)
+        {
+            for (int j = 0; j < mass.GetLength(1); j++)
+            {
+                Console.Write($"{mass[i, j, k]} ({i},{j},{k}])\t");
+            }
+        Console.WriteLine();    
+        }
+        
+    }
+}
+
+int[,,] Matrix60 = new int[2, 2, 2];
+Fill3DArray(Matrix60);
+Print3DArray(Matrix60);
+Console.WriteLine();
 
 /*
-Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
-Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
-Массив размером 2 x 2 x 2
-66(0,0,0) 25(0,1,0)
-34(1,0,0) 41(1,1,0)
-27(0,0,1) 90(0,1,1)
-26(1,0,1) 55(1,1,1)
-
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 Например, на выходе получается вот такой массив:
 01 02 03 04
