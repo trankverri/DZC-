@@ -1,0 +1,15 @@
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.csproj.AssemblyReference.cache
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.AssemblyInfoInputs.cache
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.AssemblyInfo.cs
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.csproj.CoreCompileInputs.cache
+C:\Repositories\DZC#\DZ-less009\bin\Debug\net7.0\DZ-less009.exe
+C:\Repositories\DZC#\DZ-less009\bin\Debug\net7.0\DZ-less009.deps.json
+C:\Repositories\DZC#\DZ-less009\bin\Debug\net7.0\DZ-less009.runtimeconfig.json
+C:\Repositories\DZC#\DZ-less009\bin\Debug\net7.0\DZ-less009.dll
+C:\Repositories\DZC#\DZ-less009\bin\Debug\net7.0\DZ-less009.pdb
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.dll
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\refint\DZ-less009.dll
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.pdb
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\DZ-less009.genruntimeconfig.cache
+C:\Repositories\DZC#\DZ-less009\obj\Debug\net7.0\ref\DZ-less009.dll
