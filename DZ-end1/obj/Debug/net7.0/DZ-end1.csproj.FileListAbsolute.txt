@@ -1,0 +1,5 @@
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.csproj.AssemblyReference.cache
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.AssemblyInfoInputs.cache
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.AssemblyInfo.cs
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.csproj.CoreCompileInputs.cache
