@@ -3,3 +3,13 @@ C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.GeneratedMSBuildEditorConf
 C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.AssemblyInfoInputs.cache
 C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.AssemblyInfo.cs
 C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.csproj.CoreCompileInputs.cache
+C:\Repositories\DZC#\DZ-end1\bin\Debug\net7.0\DZ-end1.exe
+C:\Repositories\DZC#\DZ-end1\bin\Debug\net7.0\DZ-end1.deps.json
+C:\Repositories\DZC#\DZ-end1\bin\Debug\net7.0\DZ-end1.runtimeconfig.json
+C:\Repositories\DZC#\DZ-end1\bin\Debug\net7.0\DZ-end1.dll
+C:\Repositories\DZC#\DZ-end1\bin\Debug\net7.0\DZ-end1.pdb
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.dll
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\refint\DZ-end1.dll
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.pdb
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\DZ-end1.genruntimeconfig.cache
+C:\Repositories\DZC#\DZ-end1\obj\Debug\net7.0\ref\DZ-end1.dll

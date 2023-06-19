@@ -2,20 +2,26 @@
 Console.WriteLine("Hello, препод.!");
 
 // обявляем строковый массив
-string[] AR = {"Маша","Даша","Мария","Дарья","Катя"};
 
-string Metod1(string[])
+
+void Metod1(string [] StringArray)
 {
-   int index=0;
-   string[] Temperatur= {};
-   string Text ="";
-while (index<Metod1.Length)
-{
-    if (AR[index].Length<=0)
+
+    string[] TempArray= {""};
+
+    foreach (var item in StringArray)
     {
-        Text= AR[index];
-        Temperatur.add(Text);
+        if (item.Length<=3)
+        {
+            TempArray=TempArray.Append(item).ToArray();
+            Console.Write("{0}\t", item);
+        }    
     }
-    Console.Write("{Temperatur}\t");
 }
-}
+// foreach (var item in TempArray)
+// {
+//     Console.Write("{0}\t", item);
+// }
+//}
+string[] AR = {"Маi","Даша","М","Дарья","hre","00","qwert","qwe"};
+Metod1(AR);
